@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ertuğrul Çavuşoğlu — Product & AI Leader</title>
+  <meta name="description" content="Portfolio of Ertuğrul Çavuşoğlu — Product & AI Leader">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#666666;
+      --link:#0b57d0;
+      --border:#e5e7eb;
+      --chip:#f5f6f7;
+      --accent:#111111;
+      --maxw:980px;
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .topbar{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav h1{font-size:18px;margin:0;font-weight:700}
+    .navlinks a{margin-left:14px;font-weight:600;color:#111}
+    .hero{padding:32px 0 12px}
+    h2.section-title{font-size:28px;margin:36px 0 12px}
+    h3{font-size:22px;margin:24px 0 8px}
+    .lead{font-size:18px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+    .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:13px;color:#333}
+    .btn{display:inline-block;border:1px solid var(--fg);padding:10px 14px;border-radius:10px;color:var(--fg);font-weight:600;transition:.15s ease;cursor:pointer}
+    .btn:hover{transform:translateY(-1px);text-decoration:none}
+    .btn.secondary{border-color:var(--border);color:#111;background:#f9fafb}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;border:1px solid var(--border);border-radius:var(--radius);padding:18px;background:#fff}
+    @media(min-width:720px){.card{grid-column:span 6}}
+    .card h4{margin:6px 0 8px;font-size:18px}
+    .muted{color:var(--muted)}
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+    .tag{font-size:12px;padding:4px 8px;border:1px solid var(--border);border-radius:999px;background:#fcfcfd}
+    .section{padding:8px 0 12px}
+    .case{border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin:18px 0}
+    ul{padding-left:20px}
+    .kicker{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#444;margin-bottom:6px}
+    .footer{border-top:1px solid var(--border);padding:28px 0;margin-top:28px;color:#444;font-size:14px}
+    .spacer{height:8px}
+    .jump{margin:10px 0 24px}
+    .small{font-size:14px}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    hr.sep{border:none;border-top:1px solid var(--border);margin:24px 0}
+    .list-links a{display:inline-flex;align-items:center;gap:8px;margin:4px 12px 4px 0;white-space:nowrap}
+    .anchor-offset{scroll-margin-top:76px}
+    .nowrap{white-space:nowrap}
+  
+    .nav-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:12px 0}
+    @media(min-width:720px){.nav-grid{grid-template-columns:repeat(5,1fr)}}
+    .nav-card a{display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:#fff;border-radius:12px;padding:12px;font-weight:600;color: var(--link);text-decoration:none;transition:.15s ease}
+    .nav-card a:hover{transform:translateY(-1px);text-decoration:none}
+</style>
+  <script>
+    // Smooth scroll for internal links
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a[href^="#"]');
+      if(!a) return;
+      const id = a.getAttribute('href');
+      const el = document.querySelector(id);
+      if(el){
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+        history.replaceState(null, '', id);
+      }
+    });
+  </script>
+
+<style id="theme-support">
+  :root {
+    --bg: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --chip-bg: #f1f5f9;
+    --btn-bg: #0f172a;
+    --btn-text: #ffffff;
+    --btn-secondary-bg: #f1f5f9;
+    --btn-secondary-text: #0f172a;
+  }
+  [data-theme="dark"] {
+    --bg: #0b1020;
+    --text: #e5e7eb;
+    --muted: #cbd5e1;
+    --card: #111827;
+    --border: #1f2937;
+    --chip-bg: #1f2937;
+    --btn-bg: #e5e7eb;
+    --btn-text: #0b1020;
+    --btn-secondary-bg: #111827;
+    --btn-secondary-text: #e5e7eb;
+  
+    --link: #8ab4f8;}
+  /* Global theme application */
+  body { background: var(--bg); color: var(--text); }
+  h1, h2, h3, h4, h5, h6 { color: var(--text); }
+  p, li, small { color: var(--text); }
+  hr { border-color: var(--border); }
+  /* Common containers/cards */
+  .card, .section, .container, .nav-card { background-color: var(--card); border-color: var(--border); }
+  /* Chips */
+  .chips .chip { background: var(--chip-bg); color: var(--text); border: 1px solid var(--border); }
+  /* Buttons */
+  .btn { background: var(--btn-bg); color: var(--btn-text); border: 1px solid transparent; }
+  .btn.secondary { background: var(--btn-secondary-bg); color: var(--btn-secondary-text); border: 1px solid var(--border); }
+  /* Links inherit color, underline on hover for visibility */
+  a { color: var(--link); }
+  a:hover { text-decoration: underline; }
+  /* Theme toggle chip */
+  .theme-toggle {
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    z-index: 1000;
+    user-select: none;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .theme-toggle input[type="checkbox"] {
+    width: 38px;
+    height: 22px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: 9999px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  .theme-toggle input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: var(--btn-secondary-text);
+    border-radius: 50%;
+    transition: transform .2s ease, background .2s ease;
+  }
+  .theme-toggle input[type="checkbox"]:checked {
+    background: var(--btn-bg);
+    border-color: var(--btn-bg);
+  }
+  .theme-toggle input[type="checkbox"]:checked::after {
+    transform: translateX(16px);
+    background: var(--btn-text);
+  }
+  .theme-toggle .icon {
+    font-size: 16px;
+    line-height: 1;
+  }
+</style>
+
+
+<style id="theme-dark-contrast">
+  /* Base styles (apply to light and dark via CSS variables) */
+  .topbar {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  }
+  .topbar h1 { color: var(--text); }
+  .topbar .navlinks a {
+    color: var(--text);
+    opacity: .9;
+  }
+  .topbar .navlinks a:hover,
+  .topbar .navlinks a:focus {
+    opacity: 1;
+    background: var(--chip-bg);
+    border-radius: 9999px;
+    text-decoration: none;
+  }
+
+  .tagrow .tag {
+    background: var(--chip-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+
+  .kicker {
+    color: var(--text);
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    padding: 2px 10px;
+    border-radius: 9999px;
+    display: inline-block;
+    letter-spacing: .02em;
+  }
+
+  /* Dark-specific subtle tweaks */
+  [data-theme="dark"] .topbar {
+    box-shadow: 0 2px 12px rgba(0,0,0,.25);
+  }
+  [data-theme="dark"] .kicker {
+    background: #0f172a;
+    border-color: #334155;
+  }
+  [data-theme="dark"] .tagrow .tag {
+    background: #1f2937;
+    border-color: #334155;
+  }
+</style>
+
+
+<style id="nav-responsive-styles">
+  /* Hidden text for screen readers only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Toggle button base (hidden on desktop) */
+  .nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    cursor: pointer;
+  }
+  .nav-toggle:focus { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  /* Hamburger icon */
+  .nav-toggle .bars,
+  .nav-toggle .bars::before,
+  .nav-toggle .bars::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-toggle .bars::before { transform: translateY(-6px); }
+  .nav-toggle .bars::after { transform: translateY(4px); }
+
+  /* When menu open -> morph into X */
+  [data-nav-open="true"] .nav-toggle .bars { transform: rotate(45deg); }
+  [data-nav-open="true"] .nav-toggle .bars::before { transform: rotate(90deg); }
+  [data-nav-open="true"] .nav-toggle .bars::after { opacity: 0; }
+
+  /* Desktop: keep existing layout */
+  @media (min-width: 769px) {
+    .topbar .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+  }
+
+  /* Mobile: collapse nav links into a panel */
+  @media (max-width: 768px) {
+    .topbar .nav {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 8px;
+    }
+    .topbar .nav h1 {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    .topbar .nav .nav-toggle {
+      display: inline-flex;
+    }
+    .topbar .nav .navlinks {
+      position: fixed;
+      top: 64px;
+      left: 12px;
+      right: 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(0,0,0,.18);
+      padding: 8px;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 1000;
+    }
+    [data-nav-open="true"] .topbar .nav .navlinks {
+      display: flex;
+    }
+    .topbar .nav .navlinks a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .topbar .nav .navlinks a:hover,
+    .topbar .nav .navlinks a:focus {
+      background: var(--chip-bg);
+      text-decoration: none;
+    }
+  }
+</style>
+
+
+<style id="theme-toggle-mobile-fix">
+  /* Ensure hamburger is above the theme toggle and not overlapped */
+  @media (max-width: 768px) {
+    .topbar .nav .nav-toggle {
+      z-index: 1100; /* higher than .theme-toggle (1000) */
+      position: relative;
+    }
+    /* Nudge the theme toggle left so it doesn't overlap the hamburger */
+    .theme-toggle {
+      right: 64px; /* 44px button + padding to clear */
+      top: 12px;
+    }
+  }
+</style>
+
+
+<style>
+/* Spacer utility (added by ChatGPT to increase gap under Talks & Press) */
+.spacer { height: 8px; }
+.spacer.spacer-lg { height: 28px; } /* tweak this value if you want more/less space */
+</style>
+
+
+<style>
+/* Increase gap under the "See Links → Talks & Press" hero button only */
+.hero a.btn.secondary[href="#talks-press"] {
+  margin-bottom: 28px; /* adjust 24–40px as needed */
+  display: inline-block;
+}
+</style>
+
+
+<style>
+/* Make selected kicker labels a bit bolder for emphasis */
+.kicker-strong { font-weight: 600; }
+</style>
+
+</head>
+<body>
+
+<div class="theme-toggle" aria-label="Theme toggle">
+  <span class="icon" aria-hidden="true">🌞</span>
+  <input type="checkbox" id="themeSwitch" aria-label="Toggle dark mode">
+  <span class="icon" aria-hidden="true">🌙</span>
+</div>
+
+  <!-- Top Navigation -->
+  <div class="topbar">
+    <div class="container nav">
+      <h1>Ertuğrul Çavuşoğlu — Product &amp; AI Leader</h1>
+      
+<button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false"><span class="bars" aria-hidden="true"></span><span class="sr-only">Menu</span></button>
+<nav id="primaryNav" class="navlinks small">
+        <a href="#work">Work</a>
+        <a href="#frameworks">Frameworks &amp; Advisory</a>
+        <a href="#talks-press">Talks &amp; Press</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Hero / Bio -->
+    <section id="home" class="hero anchor-offset">
+      <div class="kicker">Bio</div>
+      <p class="lead"><strong>👋 Ertuğrul Çavuşoğlu — Product &amp; AI Leader</strong><br>
+      Co‑founder &amp; CEO at Mindlid (Google‑featured). Previously led Emma Up (Apple‑featured). I build AI products that raise adoption, cut cost per task, and harden quality.</p>
+      <div class="list-links">
+        <a class="btn" href="#work">View my work</a>
+      </div>
+      
+
+      <div class="spacer"></div>
+      <div>
+        <div class="kicker">🧾 Featured by</div>
+        <div class="list-links">
+  
+</div>
+        <div class="chips">
+          <span class="chip">Apple</span>
+          <span class="chip">Google</span>
+          <span class="chip">Reuters</span>
+          <span class="chip">Yahoo</span>
+          <span class="chip">Yahoo Finance</span>
+          <span class="chip">Product Hunt</span>
+        </div>
+<a class="btn secondary" href="#talks-press">See Links → Talks &amp; Press</a>
+        
+      </div>
+
+      <div class="spacer"></div>
+      <div>
+        <div class="kicker kicker-strong">✨ Highlights</div>
+<ul class="small">
+  <li>Mindlid — Google showcase</li>
+  <li>Emma Up — Apple feature · Reuters, Yahoo & Yahoo Finance · 12k‑view user story</li>
+  <li>UserGuiding — Covid Meter & Resource Center · 2× Top‑5 Product Hunt</li>
+</ul>
+      </div>
+
+      <div class="spacer"></div>
+      <div>
+        <div class="kicker kicker-strong">About (short)</div>
+        <p class="small">Product &amp; technology leader (7+ yrs) across consumer AI, SaaS &amp; IoT. Led cross‑functional teams (LLM, backend, mobile, design). I use lightweight, evidence‑driven frameworks (A→O, MAP, OEL‑7, V→O) to ship fast without breaking trust.</p>
+      
+      <div>
+        <div class="kicker kicker-strong">Navigation</div>
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#frameworks">Frameworks &amp; Advisory</a></li>
+          <li><a href="#talks-press">Talks &amp; Press</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div></div>
+      </div>
+
+      </div>
+
+      </section>
+
+    <hr class="sep">
+
+    <!-- Work Grid -->
+    <section id="work" class="section anchor-offset">
+      <h2 class="section-title">Work</h2>
+      <p class="muted small">Use this grid to browse case studies. Each card opens a detailed case page.</p>
+
+      <div class="grid">
+        <!-- Mindlid -->
+        <article class="card">
+          <h4>💙 Mindlid</h4>
+          <div class="tagrow">
+            <span class="tag">Google showcase</span>
+            <span class="tag">Emotional‑wellness AI</span>
+            <span class="tag">Demo</span>
+          </div>
+          <a class="btn" href="#mindlid-case">Open case</a>
+        </article>
+
+        <!-- Emma Up -->
+        <article class="card">
+          <h4>😴 Emma Up</h4>
+          <div class="tagrow">
+            <span class="tag">Apple EU feature</span>
+            <span class="tag">Reuters</span>
+            <span class="tag">Yahoo</span>
+            <span class="tag">Yahoo Finance</span>
+            <span class="tag">12k‑view user video</span>
+          </div>
+          <a class="btn" href="#emmaup-case">Open case</a>
+        </article>
+
+        <!-- UserGuiding -->
+        <article class="card">
+          <h4>💡 UserGuiding</h4>
+          <div class="tagrow">
+            <span class="tag">Top‑5 Product Hunt ×2</span>
+            <span class="tag">Resource Center</span>
+            <span class="tag">Covid Meter</span>
+          </div>
+          <a class="btn" href="#userguiding-case">Open case</a>
+        </article>
+
+        <!-- EMnify -->
+        <article class="card">
+          <h4>📡 EMnify</h4>
+          <div class="tagrow">
+            <span class="tag">IoT PLG wins</span>
+            <span class="tag">Activation ↑41%</span>
+            <span class="tag">TTV ↓90%</span>
+          </div>
+          <a class="btn" href="#emnify-case">Open case</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="mindlid-case" class="case anchor-offset">
+      <h3>Mindlid — Case Study</h3>
+      <p><strong>Role:</strong> Co‑founder &amp; CEO / Acting CPO (2024– )</p>
+      <p><strong>One‑liner:</strong> Non‑clinical emotional‑wellness app showcased by Google for context‑aware AI.</p>
+
+      <h4>Context &amp; Team</h4>
+      <ul>
+        <li>Anticipated GenAI’s #1 consumer use case (companionship/therapy) pre‑<a href="https://hbr.org/2025/04/how-people-are-really-using-gen-ai-in-2025" target="_blank" rel="noopener">HBR validation</a>.</li>
+        <li>Assembled founding team across AI, product, design, and mobile (senior contributors).</li>
+        <li>Two strategic pivots to a differentiated non‑clinical scope with clear guardrails.</li>
+      </ul>
+
+      <h4>Problem → Bet</h4>
+      <ul>
+        <li>People want an accessible, private way to feel seen, relieved, and hopeful—without clinical claims.</li>
+        <li>Bet: structured, therapy‑inspired programs + tone customization + couples mode can reach mass adoption if reliability and cost stay in check.</li>
+      </ul>
+
+      <h4>Constraints</h4>
+      <ul>
+        <li>Investor‑safe: privacy, safety, non‑clinical language.</li>
+        <li>Cost/latency targets per route; eval gates before shipping.</li>
+        <li>Small team, rapid iteration cadence.</li>
+      </ul>
+
+      <h4>What I led</h4>
+      <ul>
+        <li>Product vision &amp; operating system (V→O); roadmap &amp; success metrics.</li>
+        <li>Program design (Couples, Quick Relief, Tone Customization).</li>
+        <li>LLM stack &amp; reliability: PCW‑3 (prompt • context • workflow), EQA‑5 (evals‑as‑QA), CEAS‑6 (cost).</li>
+        <li>Early GTM loops, activation instrumentation, research &amp; usability cycles.</li>
+      </ul>
+
+      <h4>Key Decisions</h4>
+      <ul>
+        <li>Non‑clinical scope with crisis resources and refusal policies.</li>
+        <li>“Outcome before output:” A→O tests weekly (OEL‑7).</li>
+        <li>Context discipline + caching to keep CPT low; validator/formatters for safety.</li>
+      </ul>
+
+      <h4>Results (selected)</h4>
+      <ul>
+        <li>≥90% purchase intent across 100+ early users.</li>
+        <li><a href="https://developers.googleblog.com/en/gemini-embedding-powering-rag-context-engineering/" target="_blank" rel="noopener">Google showcase at Gemini Embeddings launch</a> (context‑aware emotional AI).</li>
+        <li>Demo + teaser unlocked partner and investor interest.</li>
+      </ul>
+
+      <p class="small">Refs: <a href="https://hbr.org/2025/04/how-people-are-really-using-gen-ai-in-2025" target="_blank" rel="noopener">HBR: How people are really using GenAI (2025)</a> · 
+      <a href="https://developers.googleblog.com/en/gemini-embedding-powering-rag-context-engineering/" target="_blank" rel="noopener">Google Developers Blog: Gemini Embedding</a></p>
+
+      <p><a class="btn secondary" href="#work">Back to Work</a></p>
+    </section>
+
+    <section id="emmaup-case" class="case anchor-offset">
+      <h3>Emma Up — Case Study</h3>
+      <p><strong>Role:</strong> Head of Product &amp; Technology (Founding Team) · Emma — The Sleep Company (2023–2025)</p>
+      <p><strong>One‑liner:</strong> Apple‑featured sleep &amp; habit coach; covered by Reuters, Yahoo &amp; Yahoo Finance.</p>
+
+      <h4>Context &amp; Team</h4>
+      <ul>
+        <li>Led Backend, AI, QA Automation, Flutter, and Design inside a 1,000‑employee org.</li>
+        <li>Rebuilt the app to PMF; leveraged high‑traffic web and paid channels.</li>
+      </ul>
+
+      <h4>Problem → Bet</h4>
+      <ul>
+        <li>Fragmented sleep advice didn’t translate into sustained behavior change.</li>
+        <li>Bet: combine passive signals + habit coaching + crisp onboarding to drive retention and revenue.</li>
+      </ul>
+
+      <h4>What I led</h4>
+      <ul>
+        <li>End‑to‑end redesign and growth systems (onboarding, paywall, retention loops).</li>
+        <li>LLM features analyzing 19 sleep &amp; habit parameters for personalized challenges.</li>
+        <li>Integration with Asleep (Korea) for hands‑free, sound‑based tracking.</li>
+        <li>Data plumbing, instrumentation, and experiment cadence (weekly).</li>
+      </ul>
+
+      <h4>Key Decisions</h4>
+      <ul>
+        <li>Checkout integration for direct EBIT impact.</li>
+        <li>“First value in minutes” onboarding; reduce cognitive load and steps.</li>
+        <li>Price/plan experiments aligned to habit momentum.</li>
+      </ul>
+
+      <h4>Results (selected)</h4>
+      <ul>
+        <li>Two‑digit million‑euro EBIT impact via checkout integration.</li>
+        <li>7.8× improvement in 6‑week retention (qualified users).</li>
+        <li>20× improvement in Month‑3 subscription retention vs prior year.</li>
+        <li>€500k+ internal funding secured to scale the AI Sleep Coach.</li>
+      </ul>
+
+      <p class="small">Demos: <a href="https://youtu.be/3Fnu1_MF5i8?si=j-wooTi3PA3mKoxi&t=379" target="_blank" rel="noopener">User Testimonial (12k views)</a> · 
+      <a href="https://youtube.com/watch?v=n2NTg5GFJEk" target="_blank" rel="noopener">Launch Video</a></p>
+
+      <p><a class="btn secondary" href="#work">Back to Work</a></p>
+    </section>
+
+    <section id="userguiding-case" class="case anchor-offset">
+      <h3>UserGuiding — Case Study</h3>
+      <p><strong>Role:</strong> Product Manager (2019–2021)</p>
+      <p><strong>One‑liner:</strong> Drove adoption and growth; Top‑5 Product Hunt ×2.</p>
+
+      <h4>Context</h4>
+      <ul>
+        <li>Mid‑market SaaS with self‑serve onboarding.</li>
+        <li>Needed higher feature discovery and stickiness without heavy services.</li>
+      </ul>
+
+      <h4>Problem → Bet</h4>
+      <ul>
+        <li>Users weren’t finding help at the moment of need.</li>
+        <li>Bet: Resource Centers + guided prompts + better analytics would lift activation and usage.</li>
+      </ul>
+
+      <h4>What I did</h4>
+      <ul>
+        <li>Discovered &amp; shipped Resource Centers (contextual help hub).</li>
+        <li>Built analytics with BigQuery and PostgreSQL; instrumented core features.</li>
+        <li>Launched Covid Meter and refined guided prompts for timely value.</li>
+      </ul>
+
+      <h4>Results (selected)</h4>
+      <ul>
+        <li>60% adoption of Resource Centers in 2 months (beta).</li>
+        <li>Top‑5 Product Hunt ×2.</li>
+        <li>+40% engagement on core features.</li>
+        <li>ARR +500% (~10% MoM); supported a $1M seed round.</li>
+      </ul>
+
+      <p><a class="btn secondary" href="#work">Back to Work</a></p>
+    </section>
+
+    <section id="emnify-case" class="case anchor-offset">
+      <h3>EMnify — Case Study</h3>
+      <p><strong>Role:</strong> Growth Product Manager (2022–2023)</p>
+      <p><strong>One‑liner:</strong> PLG improvements across onboarding and evaluation flows.</p>
+
+      <h4>Problem → Bet</h4>
+      <ul>
+        <li>Activation friction and time‑to‑value blocked growth.</li>
+        <li>Bet: checklists + interactive help + prepaid/eval flow redesign would speed value and lift conversion quality.</li>
+      </ul>
+
+      <h4>What I did</h4>
+      <ul>
+        <li>Onboarding Checklists v1 + Interactive Help.</li>
+        <li>Prepaid balance &amp; evaluation card flow redesign (shortened steps, clearer value).</li>
+        <li>Integrated PQL initiatives with Salesforce.</li>
+      </ul>
+
+      <h4>Results (selected)</h4>
+      <ul>
+        <li>Activated users ↑41% in 3 months; new daily record for evaluation orders.</li>
+        <li>Time‑to‑value ↓90% (1h25 → 9m).</li>
+        <li>Incentives campaign drove 54% of evaluation orders; signup→activation ↑20%.</li>
+      </ul>
+
+      <p><a class="btn secondary" href="#work">Back to Work</a></p>
+    </section>
+
+    <hr class="sep">
+
+    <!-- Frameworks & Advisory -->
+    <section id="frameworks" class="section anchor-offset">
+      <h2 class="section-title">Frameworks &amp; Advisory</h2>
+      <p class="lead">🧪 Light‑touch, outcomes‑focused advisory (TAVOS AI Labs). I help non‑competing teams ship useful, affordable, reliable AI features and tighten PLG.</p>
+
+      <div class="grid-2">
+        <div>
+          <h4>Signature frameworks</h4>
+          <ul>
+            <li><strong>A→O Cycle</strong> — Start with a measurable Outcome, test the riskiest Assumption, ship only after a PASS.</li>
+            <li><strong>V→O Product OS</strong> — Compass → Outcomes → Discovery → Moves/RATs → OEL‑7 → Delivery → Readout.</li>
+            <li><strong>MAP</strong> — Motivation • Ability • Prompt — pick the biggest leak, run one high‑power experiment.</li>
+            <li><strong>OEL‑7</strong> — Define → Design → Build → Launch → Read → Decide (in 7 days).</li>
+            <li><strong>PCW‑3</strong> — Prompt • Context • Workflow for LLM quality.</li>
+            <li><strong>EQA‑5</strong> — Evals‑as‑QA: reliability, safety, regression control.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Advisory scope</h4>
+          <ul>
+            <li>AI feature scoring</li>
+            <li>LLM routing and cost discipline</li>
+            <li>Evals harnesses</li>
+            <li>Activation, paywall, retention clinics</li>
+            <li>Deck and pitch tune‑ups</li>
+            <li>Portfolio support for funds and accelerators</li>
+          </ul>
+
+          <h4>Operating principles</h4>
+          <ul>
+            <li>Time‑boxed (≈4–6 hrs/wk), no direct emotional‑wellness competitors, clean data and IP separation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="sep">
+
+    <!-- Talks & Press -->
+    <section id="talks-press" class="section anchor-offset">
+      <h2 class="section-title">Talks &amp; Press</h2>
+
+      <h4>Podcast</h4>
+      <p>Podcast: “AI in 5” — <a href="https://www.linkedin.com/feed/update/urn:li:activity:7270300872939573248/" target="_blank" rel="noopener">AI in 5</a></p>
+
+      <h4>Press</h4>
+      <ul>
+        <li><a href="https://www.reuters.com/plus/tbd-media-group/global-campaigns/emma-sleep" target="_blank" rel="noopener">Reuters: Discover how Emma — The Sleep Company is helping people across the globe to awaken their best</a></li>
+        <li><a href="https://www.yahoo.com/lifestyle/emma-sleep-app-gets-major-130513956.html" target="_blank" rel="noopener">Yahoo: Emma’s sleep app gets major AI upgrade to help track and improve your sleep</a></li>
+        <li><a href="https://finance.yahoo.com/news/emma-sleep-company-launches-own-154100417.html" target="_blank" rel="noopener">Yahoo Finance: Emma — The Sleep Company Launches its Own Digital AI Sleep Coach, Emma Up</a></li>
+        <li><a href="https://youtu.be/3Fnu1_MF5i8?si=j-wooTi3PA3mKoxi&t=379" target="_blank" rel="noopener">Emma Up User Testimonial (12k views)</a></li>
+        <li><a href="https://developers.googleblog.com/en/gemini-embedding-powering-rag-context-engineering/" target="_blank" rel="noopener">Mindlid Google showcase — Gemini Embedding: Powering RAG and context engineering</a></li>
+        <li><a href="https://www.producthunt.com/products/userguiding/launches/resource-center-by-userguiding" target="_blank" rel="noopener">Product Hunt Top‑5 — Resource Center</a> · <a href="https://www.producthunt.com/products/userguiding/launches/covid-meter-surveys" target="_blank" rel="noopener">COVID‑Meter</a></li>
+      </ul>
+    </section>
+
+    <hr class="sep">
+
+    <!-- About -->
+    <section id="about" class="section anchor-offset">
+      <h2 class="section-title">About</h2>
+      <p class="lead">I’m a product and technology leader focused on AI‑powered consumer and SaaS products. I co‑founded Mindlid, a Google‑showcased emotional‑wellness app, and previously led Emma Up, an Apple‑featured sleep and habit coach covered by Reuters and Yahoo Finance. My work has driven multi‑million‑euro impact, ≥90% purchase intent, and multiple Top‑5 Product Hunt launches. Through TAVOS AI Labs, I advise startups and VC portfolios using lightweight, evidence‑driven frameworks to raise adoption, cut cost per task, and harden reliability.</p>
+
+      <div class="grid-2 small">
+        <div>
+          <h4>Education &amp; Certifications</h4>
+          <ul>
+            <li>Law (CUSL, Magna Cum Laude), University of Cologne</li>
+            <li>Stanford Continuing Studies — Product Management (GPA 4.00)</li>
+            <li>Reforge — Product Strategy; Mastering Product Management</li>
+          </ul>
+
+          <h4>Honors &amp; Awards</h4>
+          <ul>
+            <li>Transparency Award (Youth) — Transparency International Turkey (grant by Swedish Consulate‑General)</li>
+          </ul>
+
+          <h4>Publication</h4>
+          <ul>
+            <li><em>Life Processed</em> (2024) — short guide to transformative self‑improvement with AI (REST, RISE, MAP)</li>
+          </ul>
+
+          <h4>Volunteer</h4>
+          <ul>
+            <li>Product School — Product 200 Founding Member</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Skills</h4>
+          <p>Product Leadership · LLM Systems · PLG and Growth · RAG/Context · Prompt and Workflow Design · Evals‑as‑QA · Analytics</p>
+
+          <p><a class="btn" href="https://drive.google.com/file/d/1X_ipmpiNpLJm1yH8-Ip0D-mZ52qxOCA3/view?usp=sharing" target="_blank" rel="noopener">Download CV (ATS PDF)</a></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="sep">
+
+    <!-- Contact -->
+    <section id="contact" class="section anchor-offset">
+      <h2 class="section-title">Contact</h2>
+      <p class="lead">✉ Let’s work together</p>
+      <p>Email: <a href="mailto:ertugrul@ertugrulcavusoglu.com">ertugrul@ertugrulcavusoglu.com</a><br>
+      LinkedIn: <a href="https://linkedin.com/in/ertugrulcavusoglu" target="_blank" rel="noopener">linkedin.com/in/ertugrulcavusoglu</a></p>
+      <p class="footer">© 2025 Ertuğrul Çavuşoğlu. All rights reserved.</p>
+    </section>
+  </main>
+
+<script id="theme-script">
+  (function () {
+    var root = document.documentElement;
+    var key = "preferred-theme";
+    var checkbox = null;
+
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        root.setAttribute("data-theme", "dark");
+        if (checkbox) checkbox.checked = true;
+      } else {
+        root.removeAttribute("data-theme");
+        if (checkbox) checkbox.checked = false;
+      }
+    }
+
+    function getInitialTheme() {
+      var saved = localStorage.getItem(key);
+      if (saved === "dark" || saved === "light") return saved;
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      return prefersDark ? "dark" : "light";
+    }
+
+    function init() {
+      checkbox = document.getElementById("themeSwitch");
+      var initial = getInitialTheme();
+      applyTheme(initial);
+
+      if (checkbox) {
+        checkbox.addEventListener("change", function () {
+          var theme = checkbox.checked ? "dark" : "light";
+          localStorage.setItem(key, theme);
+          applyTheme(theme);
+        });
+      }
+      
+      // Keep in sync with OS changes if user hasn't explicitly chosen
+      if (!localStorage.getItem(key) && window.matchMedia) {
+        try {
+          var mq = window.matchMedia("(prefers-color-scheme: dark)");
+          mq.addEventListener("change", function (e) {
+            applyTheme(e.matches ? "dark" : "light");
+          });
+        } catch (e) {}
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>
+
+
+<script id="nav-responsive-script">
+  (function () {
+    var doc = document.documentElement;
+    var btn = document.getElementById('navToggle');
+    var nav = document.getElementById('primaryNav');
+    function closeMenu() {
+      doc.setAttribute('data-nav-open', 'false');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    }
+    function toggleMenu() {
+      var open = doc.getAttribute('data-nav-open') === 'true';
+      doc.setAttribute('data-nav-open', open ? 'false' : 'true');
+      if (btn) btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    }
+    if (btn) {
+      btn.addEventListener('click', toggleMenu);
+    }
+    if (nav) {
+      nav.addEventListener('click', function (e) {
+        if (e.target && e.target.tagName && e.target.tagName.toLowerCase() === 'a') {
+          closeMenu();
+        }
+      });
+    }
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+    // Close if clicking outside the panel
+    document.addEventListener('click', function (e) {
+      if (!nav || !btn) return;
+      var withinNav = nav.contains(e.target);
+      var onBtn = btn.contains(e.target);
+      if (!withinNav && !onBtn) closeMenu();
+    });
+  })();
+</script>
+
+</body>
+</html>
